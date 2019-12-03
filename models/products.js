@@ -18,6 +18,11 @@ var productSchema = new Schema({
         type: Number,
         required: true
     },
+    gender: {
+        type: String,
+        required: true,
+        enum: ['men', 'women']
+    }
 });
 
 module.exports = mongoose.model('Product', productSchema);
