@@ -1,60 +1,47 @@
 <section class="header_text sub">
 	<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products">
-	<h4><span>Đăng nhập / Đăng ký</span></h4>
+	<h4><span>Đăng ký</span></h4>
 </section>
 <section class="main-content">
 	<div class="row">
-		<div class="span5">
-			<h4 class="title"><span class="text"><strong>Đăng nhập</strong></span></h4>
-			<form action="#" method="post">
-				<input type="hidden" name="next" value="/">
-				<fieldset>
-					<div class="control-group">
-						<label class="control-label">Tên đăng nhập</label>
-						<div class="controls">
-							<input type="text" placeholder="Nhập tên đăng nhập" id="username" class="input-xlarge">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label">Mật khẩu</label>
-						<div class="controls">
-							<input type="password" placeholder="Nhập mật khẩu" id="password" class="input-xlarge">
-						</div>
-					</div>
-					<div class="control-group">
-						<input tabindex="3" class="btn btn-inverse large" type="submit" value="Đăng nhập">
-						<hr>
-						<p class="reset">Quên <a tabindex="4" href="#"
-								title="Recover your username or password">tên đăng nhập hoặc mật khẩu?</a></p>
-					</div>
-				</fieldset>
-			</form>
-		</div>
+		
 		<div class="span7">
 			<h4 class="title"><span class="text"><strong>Đăng ký</strong></span></h4>
-			<form action="#" method="post" class="form-stacked">
+			<form action="/register" method="POST" class="form-stacked">
 				<fieldset>
 					<div class="control-group">
-						<label class="control-label">Tên đăng nhập</label>
+						<label class="control-label">Tên đầy đủ</label>
 						<div class="controls">
-							<input type="text" placeholder="Nhập tên đăng nhập" class="input-xlarge">
+							<input type="text" name="name" placeholder="Nhập họ và tên" class="input-xlarge">
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label">Địa chỉ Email:</label>
 						<div class="controls">
-							<input type="password" placeholder="Nhập địa chỉ Email" class="input-xlarge">
+							<input type="text" name="email" placeholder="Nhập địa chỉ Email" class="input-xlarge">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Tên đăng nhập</label>
+						<div class="controls">
+							<input type="text" name="username" placeholder="Nhập tên đăng nhập" class="input-xlarge">
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label">Mật khẩu:</label>
 						<div class="controls">
-							<input type="password" placeholder="Nhập mật khẩu" class="input-xlarge">
+							<input type="password" name="password" placeholder="Nhập mật khẩu" class="input-xlarge">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Xác nhận mật khẩu:</label>
+						<div class="controls">
+							<input type="password" name="password2" placeholder="Nhập lại mật khẩu" class="input-xlarge">
 						</div>
 					</div>
 					<hr>
 					<div class="actions"><input tabindex="9" class="btn btn-inverse large" type="submit"
-							value="Đăng ký"></div>
+							value="Submit"></div>
 				</fieldset>
 			</form>
 		</div>

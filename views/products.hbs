@@ -7,81 +7,17 @@
 	<div class="row">
 		<div class="span9">
 			<ul class="thumbnails listing-products">
+				{{#each products}}
 				<li class="span3">
 					<div class="product-box">
 						<span class="sale_tag"></span>
-						<a href="product_detail"><img alt="" src="themes/images/ladies/9.jpg"></a><br />
-						<a href="product_detail" class="title">Áo thun tay dài</a><br />
-						<a href="#" class="category">Đồ công sở</a>
-						<p class="price">250.000đ</p>
+						<a href="/product_detail/{{_id}}"><img alt="" src="{{imagePath}}"></a><br />
+						<a href="/product_detail/{{_id}}" class="title">{{title}}</a><br />
+						<a href="#" class="category">{{category}}</a>
+						<p class="price">${{price}}</p>
 					</div>
 				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/8.jpg"></a><br />
-						<a href="product_detail" class="title">Áo thun tay dài</a><br />
-						<a href="#" class="category">Đồ vui chơi</a>
-						<p class="price">195.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<a href="product_detail"><img alt="" src="themes/images/ladies/7.jpg"></a><br />
-						<a href="product_detail" class="title">Đầm xanh lá</a><br />
-						<a href="#" class="category">Đồ vui chơi</a>
-						<p class="price">195.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<span class="sale_tag"></span>
-						<a href="product_detail"><img alt="" src="themes/images/ladies/6.jpg"></a><br />
-						<a href="product_detail" class="title">Quần jean .ft áo thun</a><br />
-						<a href="#" class="category">Đồ vui chơi</a>
-						<p class="price">225.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/1.jpg"></a><br />
-						<a href="product_detail" class="title">Đầm chấm bi</a><br />
-						<a href="#" class="category">Đồ công sở</a>
-						<p class="price">200.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/2.jpg"></a><br />
-						<a href="product_detail" class="title">Đầm hoa văn</a><br />
-						<a href="#" class="category">Đồ công sở</a>
-						<p class="price">220.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/3.jpg"></a><br />
-						<a href="product_detail" class="title">Đầm ôm</a><br />
-						<a href="#" class="category">Đồ công sở</a>
-						<p class="price">200.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/4.jpg"></a><br />
-						<a href="product_detail" class="title">Áo thun xám</a><br />
-						<a href="#" class="category">Đồ công sở</a>
-						<p class="price">250.000đ</p>
-					</div>
-				</li>
-				<li class="span3">
-					<div class="product-box">
-						<a href="product_detail"><img alt="" src="themes/images/ladies/5.jpg"></a><br />
-						<a href="product_detail" class="title">Đầm đen huyền</a><br />
-						<a href="#" class="category">Đồ vui chơi</a>
-						<p class="price">215.000đ</p>
-					</div>
-				</li>
+				{{/each}}
 			</ul>
 			<hr>
 			<div class="pagination pagination-small pagination-centered">
@@ -100,19 +36,19 @@
 				<ul class="nav nav-list">
 					<li class="nav-header">PHÂN LOẠI CHI TIẾT</li>
 					<li><a href="products">Nullam semper elementum</a></li>
-					<li class="active"><a href="products">Phasellus ultricies</a></li>
-					<li><a href="products">Donec laoreet dui</a></li>
-					<li><a href="products">Nullam semper elementum</a></li>
-					<li><a href="products">Phasellus ultricies</a></li>
-					<li><a href="products">Donec laoreet dui</a></li>
+					<li class="active"><a href="/products">Phasellus ultricies</a></li>
+					<li><a href="/products">Donec laoreet dui</a></li>
+					<li><a href="/products">Nullam semper elementum</a></li>
+					<li><a href="/products">Phasellus ultricies</a></li>
+					<li><a href="/products">Donec laoreet dui</a></li>
 				</ul>
 				<br />
 				<ul class="nav nav-list below">
 					<li class="nav-header">THƯƠNG HIỆU</li>
-					<li><a href="products">Adidas</a></li>
-					<li><a href="products">Nike</a></li>
-					<li><a href="products">Dunlop</a></li>
-					<li><a href="products">Yamaha</a></li>
+					<li><a href="/products">Adidas</a></li>
+					<li><a href="/products">Nike</a></li>
+					<li><a href="/products">Dunlop</a></li>
+					<li><a href="/products">Yamaha</a></li>
 				</ul>
 			</div>
 			<div class="block">
@@ -127,26 +63,19 @@
 					<div class="carousel-inner">
 						<div class="active item">
 							<ul class="thumbnails listing-products">
+								
 								<li class="span3">
+									
 									<div class="product-box">
+										{{#each products}}
 										<span class="sale_tag"></span>
-										<img alt="" src="themes/images/ladies/1.jpg"><br />
-										<a href="product_detail" class="title">Đầm chấm bi</a><br />
-										<a href="#" class="category">Đồ công sở</a>
-										<p class="price">200.000đ</p>
+										<img alt="" src="{{imagePath}}"><br />
+										<a href="/product_detail/{{_id}}" class="title">{{title}}</a><br />
+										<a href="#" class="category">{{category}}</a>
+										<p class="price">${{price}}</p>
+										{{/each}}
 									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="item">
-							<ul class="thumbnails listing-products">
-								<li class="span3">
-									<div class="product-box">
-										<img alt="" src="themes/images/ladies/2.jpg"><br />
-										<a href="product_detail" class="title">Đầm hoa văn</a><br />
-										<a href="#" class="category">Đồ công sở</a>
-										<p class="price">220.000đ</p>
-									</div>
+									
 								</li>
 							</ul>
 						</div>

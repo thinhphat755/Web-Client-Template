@@ -43,7 +43,9 @@
             <li><a href="#">Tài khoản của bạn</a></li>
             <li><a href="/cart">Giỏ hàng</a></li>
             <li><a href="/checkout">Thanh toán</a></li>
-            <li><a href="/register">Đăng nhập</a></li>
+            <li><a href="/login">Đăng nhập</a></li>
+            <li><a href="/register">Đăng ký</a></li>
+            <li><a href="/logout">Đăng xuất</a></li>
           </ul>
         </div>
       </div>
@@ -52,27 +54,32 @@
   <div id="wrapper" class="container">
     <section class="navbar main-menu">
       <div class="navbar-inner main-menu">
-        <a href="/index" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+        <a href="/" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
         <nav id="menu" class="pull-right">
           <ul>
-            <li><a href="/products">Đồ phụ nữ</a>
+            <li><a href="/products?act=women">Đồ phụ nữ</a>
               <ul>
-                <li><a href="/products">Đầm</a></li>
-                <li><a href="/products">Áo khoác</a></li>
-                <li><a href="/products">Hoodies</a></li>
+                <li><a href="/products?act=dress">Đầm</a></li>
+                <li><a href="/products?act=women_tshirt">Áo thun</a></li>
+                <li><a href="/products?act=women_jacket">Áo khoác</a></li>
               </ul>
             </li>
-            <li><a href="/products">Đồ đàn ông</a></li>
-            <li><a href="/products">Đồ thể thao</a>
+            <li><a href="/products?act=men">Đồ đàn ông</a>
               <ul>
-                <li><a href="/products">Bóng rổ</a></li>
-                <li><a href="/products">Bóng đá</a></li>
-                <li><a href="/products">Chạy bộ</a></li>
+                <li><a href="/products?act=men_tshirt">Áo thun</a></li>
+                <li><a href="/products?act=men_jacket">Áo khoác</a></li>
               </ul>
             </li>
-            <li><a href="/products">Cặp xách</a></li>
-            <li><a href="/products">Phụ kiện</a></li>
-            <li><a href="/products">Bán chạy nhất</a></li>
+            <li><a href="/products?act=sports">Đồ thể thao</a>
+              <ul>
+                <li><a href="/products?act=basketball">Bóng rổ</a></li>
+                <li><a href="/products?act=soccer">Bóng đá</a></li>
+                <li><a href="/products?act=running">Chạy bộ</a></li>
+              </ul>
+            </li>
+            <li><a href="/products?act=bags">Cặp xách</a></li>
+            <li><a href="/products?act=accesory">Phụ kiện</a></li>
+            <li><a href="/products?act=bestsell">Bán chạy nhất</a></li>
           </ul>
         </nav>
       </div>
@@ -85,7 +92,7 @@
         <div class="span3">
           <h4>Chỉ dẫn</h4>
           <ul class="nav">
-            <li><a href="/index">Trang chủ</a></li>
+            <li><a href="/">Trang chủ</a></li>
             <li><a href="/">Giới thiệu</a></li>
             <li><a href="/contact">Liên hệ</a></li>
             <li><a href="/cart">Giỏ hàng của bạn</a></li>
