@@ -11,7 +11,7 @@ var productController = require('../controllers/productController');
 const User = require('../models/user');
 
 /* GET home page. */
-router.get('/', ensureAuthenticated, indexController.home);
+router.get('/', indexController.authentication);
 
 /* GET register page. */
 router.get('/register', forwardAuthenticated, usersController.register);
